@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Data Binding</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+</head>
+<body>
+    <div id="vue-app">
+
+        <h1>Data Binding</h1>
+        <a v-bind:href="website">Click me?</a>
+        <br>
+        <a :href="website">Click me but shorthand (check html bro)</a>
+        <br>
+        <input type="text" :value="name">
+        <input type="text" v-bind:value="name">
+        <br>
+        <p v-html="htmlTag"></p>
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

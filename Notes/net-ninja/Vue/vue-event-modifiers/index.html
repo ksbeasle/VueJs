@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue Event modifiers</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+</head>
+<body>
+    <div id="vue-app">
+        <h1>{{num}}</h1>
+        <br>
+        <button v-on:click.once="foo">Try to click me twice :D </button>
+        <br>
+        <a @click.prevent="no" href="google.com">a Link</a>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

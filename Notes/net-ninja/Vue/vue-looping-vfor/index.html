@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue v-for</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="vue-app">
+        <ul>
+            <li v-for="name in names">{{ name }}</li>
+        </ul>
+        <br>
+        <ul>
+                <li v-for="(name, index) in names">{{ index }} -- {{ name }}</li>
+            </ul>
+        <br>
+        <template v-for="o in obj">
+            <div v-for="(key, value) in o">
+                <strong>{{ key }} - {{ value }}</strong>
+            </div>
+        </template>    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
